@@ -9,7 +9,6 @@ using System;
 using OpenAI.Images;
 using System.Net.Http;
 using System.Text;
-using Proyecto26;
 using OpenAI.Audio;
 public class NetworkSystem : MonoBehaviour
 {
@@ -69,9 +68,9 @@ public class NetworkSystem : MonoBehaviour
     }
 
     // 이미지 편집
-    public async UniTask<Texture2D> EditImage(string imageAssetPath, string maskAssetPath, int imageCount)
+    public async UniTask<Texture2D> EditImage(string imageAssetPath, string prompt, int imageCount)
     {
-        var request = new ImageEditRequest(imageAssetPath, maskAssetPath, imageCount, ImageSize.Small);
+        var request = new ImageEditRequest(imageAssetPath, prompt, imageCount, ImageSize.Small);
         var imageResults = await openAIClient.ImagesEndPoint.CreateImageEditAsync(request);
         return imageResults[0].Texture; // 편집된 이미지 반환
     }

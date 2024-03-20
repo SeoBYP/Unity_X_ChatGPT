@@ -27,6 +27,20 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.addressables": {
+      "version": "1.21.20",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.scriptablebuildpipeline": "1.21.22",
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.collab-proxy": {
       "version": "2.3.1",
       "depth": 0,
@@ -165,6 +179,13 @@
     "com.unity.profiling.core": {
       "version": "1.0.2",
       "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.scriptablebuildpipeline": {
+      "version": "1.21.22",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -427,6 +448,13 @@
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
       "url": "https://package.openupm.com"
+    },
+    "jp.co.cyberagent.smartaddresser": {
+      "version": "https://github.com/CyberAgentGameEntertainment/SmartAddresser.git?path=/Assets/SmartAddresser",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "45d6675cc6d47cb7516d838736ee8e3ce0a997b6"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

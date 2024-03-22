@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Data;
 using Sirenix.OdinInspector;
 using Sirenix.OdinInspector.Editor;
-using StoryModel;
 using UnityEditor;
 using UnityEngine;
 
@@ -37,7 +37,7 @@ namespace PromptEditor
                     menuName = menuName.Substring(0, assetExtensionIndex);
                 }
 
-                tree.AddAssetAtPath(menuName, path, typeof(SerializedScriptableObject));
+                tree.AddAssetAtPath(menuName, path, typeof(ScriptableObject));
             }
             tree.Add("Create New Story", new CreatePromptMenuItem());
             tree.EnumerateTree().AddThumbnailIcons();
@@ -75,18 +75,20 @@ namespace PromptEditor
         [BoxGroup("스토리 정보")]
         [SerializeField, TextArea] public string StoryTitle = "Story Title";
         [BoxGroup("스토리 정보")]
+        [SerializeField, TextArea] public string StoryResource = "Story Resource";
+        [BoxGroup("스토리 정보")]
         [SerializeField, MultiLineProperty(20)] public string StoryDescription = "Story Description";
 
         [Button("Create New Prompt")]
         private void CreateNewPrompt()
         {
             // 새 StoryPromptModel 인스턴스를 생성합니다.
-            StoryPromptModel newStory = ScriptableObject.CreateInstance<StoryPromptModel>();
+            StoryModelDataField newStory = ScriptableObject.CreateInstance<StoryModelDataField>();
             newStory.name = AssetName;
             // 새 StoryPromptModel 에셋에 제목과 설명을 설정합니다.
             newStory.StoryTitle = StoryTitle;
             newStory.StoryDescription = StoryDescription;
-
+            newStory.StoryResourceID = StoryResource;
             // 생성된 StoryPromptModel 인스턴스를 에셋으로 저장합니다.
             // 파일 이름에 .asset 확장자를 추가합니다.
             string assetPath = folderPath + AssetName + ".asset";

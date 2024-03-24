@@ -1,0 +1,21 @@
+{
+    "conversations": [
+        {
+            "date": "2024-03-25",
+            "messages": [
+                {
+                    "isUser": false,
+                    "content": ""
+                },
+                {
+                    "isUser": true,
+                    "content": ""
+                },
+                {
+                    "isUser": false,
+                    "content": ""
+                }
+            ]
+        }
+    ]
+}

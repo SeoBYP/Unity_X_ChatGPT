@@ -16,6 +16,74 @@
                     "content": ""
                 }
             ]
+        },
+        {
+            "date": "2024-03-27",
+            "messages": [
+                {
+                    "isUser": false,
+                    "content": "I want you to act as a math teacher. I will provide some mathematical equations or concepts, and it will be your job to explain them in easy-to-understand terms. This could include providing step-by-step instructions for solving a problem, demonstrating various techniques with visuals or suggesting online resources for further study. My first request is \"I need help understanding how probability works.\""
+                },
+                {
+                    "isUser": true,
+                    "content": "삼각 함수에 대해서 설명해줘"
+                },
+                {
+                    "isUser": false,
+                    "content": "삼각 함수는 삼각형의 각도와 변의 길이 사이의 관계를 나타내는 함수입니다. 주로 삼각형의 각도를 입력으로 받아 변의 길이를 출력하는데 사용됩니다. 세 가지 주요 삼각 함수는 사인(sin), 코사인(cos), 탄젠트(tan)입니다.\n\n1. 사인(sin): 주어진 각도의 대변(반대변)과 빗변의 비율을 나타냅니다. 삼각형의 대변을 빗변으로 나눈 값이 사인값이 됩니다. sin(θ) = 대변 / 빗변\n\n2. 코사인(cos): 주어진 각도의 인접변과 빗변의 비율을 나타냅니다. 삼각형의 인접변을 빗변으로 나눈 값이 코사인값이 됩니다. cos(θ) = 인접변 / 빗변\n\n3. 탄젠트(tan): 주어진 각도의 대변과 인접변의 비율을 나타냅니다. 삼각형의 대변을 인접변으로 나눈 값이 탄젠트값이 됩니다. tan(θ) = 대변 / 인접변\n\n이러한 삼각 함수들은 주로 직각삼각형에서 사용되며, 삼각 함수 표를 통해 각도에 따른 값들을 쉽게 찾을 수 있습니다. 삼각 함수는 수학뿐만 아니라 공학, 물리학 등 다양한 분야에서 활용되므로 중요한 개념입니다."
+                }
+            ]
+        },
+        {
+            "date": "2024-03-27",
+            "messages": [
+                {
+                    "isUser": false,
+                    "content": "I want you to act as a travel guide. I will write you my location and you will suggest a place to visit near my location. In some cases, I will also give you the type of places I will visit. You will also suggest me places of similar type that are close to my first location. My first suggestion request is \"I am in Istanbul/Beyoğlu and I want to visit only museums.\""
+                },
+                {
+                    "isUser": true,
+                    "content": "일본여행은 어디로 가는게 좋을까?"
+                },
+                {
+                    "isUser": false,
+                    "content": "일본 여행을 계획 중이시군요! 만약 일본을 방문하시는데 처음이라면, 꼭 가보시면 좋을 곳은 도쿄입니다. 특히 아사쿠사, 시부야, 신주쿠, 우에노 등의 지역은 관광객들에게 인기 있는 명소들이 많이 모여 있습니다. 아사쿠사의 센소지-지, 시부야의 슈테이크 하우스, 신주쿠의 메트로폴리탄 미술관, 우에노의 우에노 도쿄 미술관 등 다양한 관광 명소들이 있습니다. 또한 일본의 전통적인 문화를 경험하고 싶다면 교토도 좋은 선택지입니다. 교토에는 수많은 사원과 신사, 정원 등이 있어 일본의 전통과 아름다움을 느낄 수 있습니다. 교토의 킨카쿠지, 기요미즈데라, 교토 국립 박물관 등을 방문해 보시는 것을 추천드립니다. 일본은 다양한 매력을 가진 나라이니, 여행 일정을 계획하실 때 여러 지역을 방문해 보시는 것도 좋은 방법일 것입니다. 즐거운 일본 여행 되시길 바랍니다!"
+                }
+            ]
+        },
+        {
+            "date": "2024-03-27",
+            "messages": [
+                {
+                    "isUser": false,
+                    "content": "I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, upper level English words and sentences. Keep the meaning same, but make them more literary. I want you to only reply the correction, the improvements and nothing else, do not write explanations. My first sentence is \"istanbulu cok seviyom burada olmak cok guzel\""
+                },
+                {
+                    "isUser": true,
+                    "content": "저의 이름은 유니얼입니다.\u000B이 문장을 영어로 표현하게 도와줘요"
+                },
+                {
+                    "isUser": false,
+                    "content": "My name is Unial."
+                }
+            ]
+        },
+        {
+            "date": "2024-03-27",
+            "messages": [
+                {
+                    "isUser": false,
+                    "content": "I want you to act as a math teacher. I will provide some mathematical equations or concepts, and it will be your job to explain them in easy-to-understand terms. This could include providing step-by-step instructions for solving a problem, demonstrating various techniques with visuals or suggesting online resources for further study. My first request is \"I need help understanding how probability works.\""
+                },
+                {
+                    "isUser": true,
+                    "content": "삼각형 공식에 대해서 설명해줘"
+                },
+                {
+                    "isUser": false,
+                    "content": "삼각형의 넓이를 구하는 공식은 다양한 방법으로 표현될 수 있지만, 가장 기본적인 공식은 \"밑변 × 높이 ÷ 2\"입니다. 이 공식은 삼각형을 이루는 변 중 하나를 밑변으로 정하고, 이에 수직인 높이를 내려 그 길이를 곱한 후 2로 나누어 넓이를 구하는 방법입니다.\n\n예를 들어, 밑변이 6이고 높이가 4인 삼각형의 넓이를 구한다고 가정해봅시다. 이 경우, 넓이는 (6 × 4) ÷ 2 = 12가 됩니다.\n\n삼각형의 넓이를 구하는 다른 방법으로는 \"밑변 × 높이 × sin(각도) ÷ 2\" 공식을 사용할 수도 있습니다. 이 공식은 삼각형의 한 변과 이에 수직인 높이, 그리고 두 변 사이의 각도를 이용하여 넓이를 계산하는 방법입니다.\n\n이러한 공식들을 사용하여 주어진 삼각형의 정보를 활용해 넓이를 구할 수 있습니다. 만약 삼각형의 변의 길이나 각도가 주어지지 않은 경우, 삼각형의 넓이를 구하기 위해서는 추가 정보가 필요할 수 있습니다."
+                }
+            ]
         }
     ]
 }

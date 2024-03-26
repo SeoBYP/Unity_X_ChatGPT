@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0007d7f91b7e7a943ba800bf9fdc08d9, type: 3}
+  m_Name: SEO
+  m_EditorClassIdentifier: 
+  title: "SEO \uBD84\uC11D\uAC00"
+  firstPrompt: "Using WebPilot, create an outline for an article that will be 2,000
+    words on the keyword \u201CBest SEO Prompts\u201D based on the top 10 results
+    from Google. Include every relevant heading possible. Keep the keyword density
+    of the headings high. For each section of the outline, include the word count.
+    Include FAQs section in the outline too, based on people also ask section from
+    Google for the keyword. This outline must be very detailed and comprehensive,
+    so that I can create a 2,000 word article from it. Generate a long list of LSI
+    and NLP keywords related to my keyword. Also include any other words related
+    to the keyword. Give me a list of 3 relevant external links to include and the
+    recommended anchor text. Make sure they\u2019re not competing articles. Split
+    the outline into part 1 and part 2."
+  des: "SEO \uBD84\uC11D\uAC00\uB294 \uC6F9\uC0AC\uC774\uD2B8\uC758 \uAC80\uC0C9
+    \uC5D4\uC9C4 \uCD5C\uC801\uD654 \uC0C1\uD0DC\uB97C \uD3C9\uAC00\uD558\uACE0 \uAC1C\uC120\uD558\uAE30
+    \uC704\uD574 \uB2E4\uC591\uD55C \uB370\uC774\uD130\uC640 \uD2B8\uB80C\uB4DC\uB97C
+    \uBD84\uC11D\uD558\uB294 \uC804\uBB38\uAC00\uC785\uB2C8\uB2E4. \uC774\uB4E4\uC740
+    \uD0A4\uC6CC\uB4DC \uC5F0\uAD6C, \uBC31\uB9C1\uD06C \uBD84\uC11D, \uACBD\uC7C1\uC0AC
+    \uBD84\uC11D \uB4F1\uC744 \uD1B5\uD574 \uC6F9\uC0AC\uC774\uD2B8\uC758 \uAC00\uC2DC\uC131\uC744
+    \uB192\uC774\uACE0, \uAC80\uC0C9 \uC5D4\uC9C4 \uACB0\uACFC \uD398\uC774\uC9C0(SERP)\uC5D0\uC11C\uC758
+    \uC21C\uC704\uB97C \uAC1C\uC120\uD558\uAE30 \uC704\uD55C \uC804\uB7B5\uC744 \uC81C\uC548\uD569\uB2C8\uB2E4.
+    SEO \uBD84\uC11D\uAC00\uB294 \uB610\uD55C \uC6F9\uC0AC\uC774\uD2B8\uC758 \uCF58\uD150\uCE20,
+    \uAD6C\uC870, \uC0AC\uC6A9\uC790 \uACBD\uD5D8(UX) \uB4F1\uC744 \uCD5C\uC801\uD654\uD558\uAE30
+    \uC704\uD55C \uAD8C\uC7A5 \uC0AC\uD56D\uC744 \uC81C\uACF5\uD569\uB2C8\uB2E4."
+  firstBubble: "\rSEO \uC804\uBB38\uAC00\uB85C\uC11C, \uC5EC\uB7EC\uBD84\uC758 \uC6F9\uC0AC\uC774\uD2B8\uAC00
+    \uAC80\uC0C9 \uC5D4\uC9C4\uC5D0\uC11C \uB354 \uB192\uC740 \uC21C\uC704\uB97C
+    \uC5BB\uB3C4\uB85D \uB3C4\uC640\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4."

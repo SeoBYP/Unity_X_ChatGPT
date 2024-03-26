@@ -4,6 +4,7 @@ using OpenAI;
 using UnityEngine;
 using OpenAI;
 using OpenAI.Chat;
+using Sirenix.OdinInspector;
 
 
 namespace Rolos
@@ -12,6 +13,11 @@ namespace Rolos
     public class RoleCategorySO : ScriptableObject
     {
         public string title;
-        public Roles[] roles;
+        [MultiLineProperty(lines:15)]
+        public string firstPrompt;
+        [MultiLineProperty(lines:7)]
+        public string des;
+        [MultiLineProperty]
+        public string firstBubble;
     }
 }

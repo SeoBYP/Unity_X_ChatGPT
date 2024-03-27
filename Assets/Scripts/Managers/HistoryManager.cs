@@ -18,7 +18,7 @@ public class HistoryManager : SingleTon<HistoryManager>,
     [Header("Data")] 
     private History _history;
 
-    private string dataPath => Application.dataPath + "/History.json";
+    private string dataPath => Application.persistentDataPath + "/History.json";
 
     private void Awake()
     {

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using Events;
 using Michsky.MUIP;
 using Rolos;
@@ -13,7 +14,7 @@ public enum EWindows
     RoleSelect,
     Chatting
 }
-public class GUIManager : MonoBehaviour,
+public class GUIManager : SingleTon<GUIManager>,
     EventListener<OnRequestRole>,
     EventListener<OnRequestConversation>,
     EventListener<OnNoMoreChat>
@@ -21,9 +22,12 @@ public class GUIManager : MonoBehaviour,
     [Header("Elements")] 
     [SerializeField] private WindowManager windowManager;
     [SerializeField] private ModalWindowManager noMoreMessage;
+    [SerializeField] private CanvasGroup spinnerPopup;
+    [SerializeField] private UIManagerProgressBarLoop progressBarLoop;
     private void Start()
     {
         noMoreMessage.Close();
+        HideSpinner().Forget();
         windowManager.onWindowChange.AddListener(ClearCurrentRole);
     }
 
@@ -80,6 +84,22 @@ public class GUIManager : MonoBehaviour,
     {
         noMoreMessage.Close();
         windowManager.OpenWindowByIndex(0);
+    }
+
+    public async UniTask ShowSpinner()
+    {
+        spinnerPopup.blocksRaycasts = true;
+        spinnerPopup.interactable = true;
+        spinnerPopup.alpha = 1;
+        progressBarLoop.gameObject.SetActive(true);
+    }
+    
+    public async  UniTask HideSpinner()
+    {
+        spinnerPopup.blocksRaycasts = false;
+        spinnerPopup.interactable = false;
+        spinnerPopup.alpha = 0;
+        progressBarLoop.gameObject.SetActive(false);
     }
     
     private void OnEnable()

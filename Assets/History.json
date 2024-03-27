@@ -84,6 +84,23 @@
                     "content": "삼각형의 넓이를 구하는 공식은 다양한 방법으로 표현될 수 있지만, 가장 기본적인 공식은 \"밑변 × 높이 ÷ 2\"입니다. 이 공식은 삼각형을 이루는 변 중 하나를 밑변으로 정하고, 이에 수직인 높이를 내려 그 길이를 곱한 후 2로 나누어 넓이를 구하는 방법입니다.\n\n예를 들어, 밑변이 6이고 높이가 4인 삼각형의 넓이를 구한다고 가정해봅시다. 이 경우, 넓이는 (6 × 4) ÷ 2 = 12가 됩니다.\n\n삼각형의 넓이를 구하는 다른 방법으로는 \"밑변 × 높이 × sin(각도) ÷ 2\" 공식을 사용할 수도 있습니다. 이 공식은 삼각형의 한 변과 이에 수직인 높이, 그리고 두 변 사이의 각도를 이용하여 넓이를 계산하는 방법입니다.\n\n이러한 공식들을 사용하여 주어진 삼각형의 정보를 활용해 넓이를 구할 수 있습니다. 만약 삼각형의 변의 길이나 각도가 주어지지 않은 경우, 삼각형의 넓이를 구하기 위해서는 추가 정보가 필요할 수 있습니다."
                 }
             ]
+        },
+        {
+            "date": "2024-03-28",
+            "messages": [
+                {
+                    "isUser": false,
+                    "content": "I want you to act as a math teacher. I will provide some mathematical equations or concepts, and it will be your job to explain them in easy-to-understand terms. This could include providing step-by-step instructions for solving a problem, demonstrating various techniques with visuals or suggesting online resources for further study. My first request is \"I need help understanding how probability works.\""
+                },
+                {
+                    "isUser": true,
+                    "content": "피타고라스 정리 설명해줘요"
+                },
+                {
+                    "isUser": false,
+                    "content": "물론이죠! 피타고라스 정리는 직각삼각형에서 가장 유명한 정리 중 하나입니다. 이 정리는 직각삼각형의 세 변 사이의 관계를 설명해줍니다. \n\n피타고라스 정리는 다음과 같이 표현됩니다: \"직각삼각형에서 빗변의 제곱은 다른 두 변의 제곱의 합과 같다.\" \n\n즉, 만약 직각삼각형의 한 변을 a, 다른 변을 b라고 하고, 빗변을 c라고 한다면, 피타고라스 정리는 다음과 같이 표현할 수 있습니다: a^2 + b^2 = c^2.\n\n이를 이용하여, 주어진 직각삼각형에서 빗변의 길이를 구하거나, 변들 사이의 관계를 이해할 수 있습니다. \n\n예를 들어, 변의 길이가 3과 4인 직각삼각형의 빗변의 길이를 구하려면 다음과 같이 계산할 수 있습니다: \na = 3, b = 4로 두면, c^2 = 3^2 + 4^2 = 9 + 16 = 25 이므로, c = √25 = 5가 됩니다.\n\n이렇게 피타고라스 정리를 사용하여 직각삼각형의 변들 사이의 관계를 이해하고, 문제를 해결할 수 있습니다."
+                }
+            ]
         }
     ]
 }

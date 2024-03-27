@@ -1266,7 +1266,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: asfsadfsadfasdfasdf
+  m_text: "\uC0BC\uAC01 \uD568\uC218\uB294 \uC0BC\uAC01\uD615\uC758 \uAC01\uB3C4\uC640
+    \uBCC0\uC758 \uAE38\uC774 \uC0AC\uC774\uC758 \uAD00\uACC4\uB97C \uB098\uD0C0\uB0B4\uB294
+    \uD568\uC218\uC785\uB2C8\uB2E4. \uC8FC\uB85C \uC0BC\uAC01\uD615\uC758 \uAC01\uB3C4\uB97C
+    \uC785\uB825\uC73C\uB85C \uBC1B\uC544 \uBCC0\uC758 \uAE38\uC774\uB97C \uCD9C\uB825\uD558\uB294\uB370
+    \uC0AC\uC6A9\uB429\uB2C8\uB2E4. \uC138 \uAC00\uC9C0 \uC8FC\uC694 \uC0BC\uAC01
+    \uD568\uC218\uB294 \uC0AC\uC778(sin), \uCF54\uC0AC\uC778(cos), \uD0C4\uC820\uD2B8(tan)\uC785\uB2C8\uB2E4.\\n\\n1.
+    \uC0AC\uC778(sin): \uC8FC\uC5B4\uC9C4 \uAC01\uB3C4\uC758 \uB300\uBCC0(\uBC18\uB300\uBCC0)\uACFC
+    \uBE57\uBCC0\uC758 \uBE44\uC728\uC744 \uB098\uD0C0\uB0C5\uB2C8\uB2E4. \uC0BC\uAC01\uD615\uC758
+    \uB300\uBCC0\uC744 \uBE57\uBCC0\uC73C\uB85C \uB098\uB208 \uAC12\uC774 \uC0AC\uC778\uAC12\uC774
+    \uB429\uB2C8\uB2E4. sin(\u03B8) = \uB300\uBCC0 / \uBE57\uBCC0\\n\\n2. \uCF54\uC0AC\uC778(cos):
+    \uC8FC\uC5B4\uC9C4 \uAC01\uB3C4\uC758 \uC778\uC811\uBCC0\uACFC \uBE57\uBCC0\uC758
+    \uBE44\uC728\uC744 \uB098\uD0C0\uB0C5\uB2C8\uB2E4. \uC0BC\uAC01\uD615\uC758 \uC778\uC811\uBCC0\uC744
+    \uBE57\uBCC0\uC73C\uB85C \uB098\uB208 \uAC12\uC774 \uCF54\uC0AC\uC778\uAC12\uC774
+    \uB429\uB2C8\uB2E4. cos(\u03B8) = \uC778\uC811\uBCC0 / \uBE57\uBCC0\\n\\n3. \uD0C4\uC820\uD2B8(tan):
+    \uC8FC\uC5B4\uC9C4 \uAC01\uB3C4\uC758 \uB300\uBCC0\uACFC \uC778\uC811\uBCC0\uC758
+    \uBE44\uC728\uC744 \uB098\uD0C0\uB0C5\uB2C8\uB2E4. \uC0BC\uAC01\uD615\uC758 \uB300\uBCC0\uC744
+    \uC778\uC811\uBCC0\uC73C\uB85C \uB098\uB208 \uAC12\uC774 \uD0C4\uC820\uD2B8\uAC12\uC774
+    \uB429\uB2C8\uB2E4. tan(\u03B8) = \uB300\uBCC0 / \uC778\uC811\uBCC0\\n\\n\uC774\uB7EC\uD55C
+    \uC0BC\uAC01 \uD568\uC218\uB4E4\uC740 \uC8FC\uB85C \uC9C1\uAC01\uC0BC\uAC01\uD615\uC5D0\uC11C
+    \uC0AC\uC6A9\uB418\uBA70, \uC0BC\uAC01 \uD568\uC218 \uD45C\uB97C \uD1B5\uD574
+    \uAC01\uB3C4\uC5D0 \uB530\uB978 \uAC12\uB4E4\uC744 \uC27D\uAC8C \uCC3E\uC744
+    \uC218 \uC788\uC2B5\uB2C8\uB2E4. \uC0BC\uAC01 \uD568\uC218\uB294 \uC218\uD559\uBFD0\uB9CC
+    \uC544\uB2C8\uB77C \uACF5\uD559, \uBB3C\uB9AC\uD559 \uB4F1 \uB2E4\uC591\uD55C
+    \uBD84\uC57C\uC5D0\uC11C \uD65C\uC6A9\uB418\uBBC0\uB85C \uC911\uC694\uD55C \uAC1C\uB150\uC785\uB2C8\uB2E4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d51dd3774caaf394fa77d999a7369122, type: 2}
   m_sharedMaterial: {fileID: 5368627830756204183, guid: d51dd3774caaf394fa77d999a7369122,
@@ -1297,7 +1320,7 @@ MonoBehaviour:
   m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 36
   m_fontStyle: 0
@@ -1312,7 +1335,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 2
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -2214,6 +2237,7 @@ GameObject:
   - component: {fileID: 7317103607279241160}
   - component: {fileID: 537335646401327707}
   - component: {fileID: 5891484100181223908}
+  - component: {fileID: 5607492190202968348}
   m_Layer: 5
   m_Name: TextArea
   m_TagString: Untagged
@@ -2299,6 +2323,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &5607492190202968348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8786472651221902387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
 --- !u!1 &9047614594842147712
 GameObject:
   m_ObjectHideFlags: 0

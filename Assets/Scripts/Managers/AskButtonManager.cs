@@ -56,7 +56,9 @@ public class AskButtonManager : SingleTon<AskButtonManager>
         if (recording)
             return;
 
-        if(prompt.Length <= 0 || DiscussionManager.Instance.HasRoles == false)
+        if(prompt.Length <= 0 
+           || !DiscussionManager.Instance.HasRoles
+           || DiscussionManager.Instance.CreatingBubble)
         {
             askButton.Interactable(false);
         }

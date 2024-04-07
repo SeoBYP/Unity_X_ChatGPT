@@ -22,7 +22,7 @@ public class DiscussionBubble : MonoBehaviour
     
     [Header(" Events ")] public static Action<string> onVoiceButtonClicked;
     
-    public async UniTask Configure(string message, bool isUserMessage)
+    public async UniTask Configure(string message, bool isUserMessage,bool animation = true)
     {
         if (isUserMessage)
         {
@@ -33,7 +33,15 @@ public class DiscussionBubble : MonoBehaviour
             voiceButton.SetActive(false);
         }
 
-        await AnimateTextAsync(message, duration);
+        if (animation)
+        {
+            await AnimateTextAsync(message, duration);
+        }
+        else
+        {
+            await SetTextAsync(message);
+        }
+
         messageText.ForceMeshUpdate();
     }
 
@@ -52,7 +60,13 @@ public class DiscussionBubble : MonoBehaviour
             OnUpdateScroll.Trigger();
         }
     }
-
+    
+    private async UniTask SetTextAsync(string message)
+    {
+        messageText.text = message; // 메시지 텍스트 초기화
+        OnUpdateScroll.Trigger();
+    }
+    
     public void VoiceButtonCallback()
     {
         onVoiceButtonClicked?.Invoke(messageText.text);

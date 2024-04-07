@@ -79,28 +79,27 @@ public class DiscussionManager : SingleTon<DiscussionManager>,
         ClearAllBubble();
         Message prompt = new Message(Role.System, eventType.roles.firstPrompt);
         chatPrompts.Add(prompt);
-        CreateBubble(eventType.roles.firstChat, false);
+        CreateBubble(eventType.roles.firstChat, false,true).Forget();
         Initialize();
     }
 
-    public void OnEvent(OnRequestConversation eventType)
+    public async void OnEvent(OnRequestConversation eventType)
     {
         currentConversation = eventType.conversation;
         chatPrompts.Clear();
         ClearAllBubble();
 
-        for (int i = 0; i < eventType.conversation.messages.Length; i++)
+        Histories.Message prompt = eventType.conversation.messages[0];
+        chatPrompts.Add(new Message(Role.System, prompt.content));
+        await GUIManager.Instance.ShowSpinner();
+        for (int i = 1; i < eventType.conversation.messages.Length; i++)
         {
             Histories.Message msg = eventType.conversation.messages[i];
-            Role role;
-            if (i == 0)
-                role = Role.System;
-            else
-                role = msg.isUser ? Role.User : Role.System;
-
+            Role role = msg.isUser ? Role.User : Role.System;
             chatPrompts.Add(new Message(role, msg.content));
-            CreateBubble(msg.content, msg.isUser);
+            await CreateBubble(msg.content, msg.isUser,false);
         }
+        await GUIManager.Instance.HideSpinner();
     }
 
     public async void AskButtonCallback()
@@ -118,7 +117,7 @@ public class DiscussionManager : SingleTon<DiscussionManager>,
         if (inputField.text.Length <= 0)
             return;
 
-        CreateBubble(inputField.text, true);
+        await CreateBubble(inputField.text, true,true);
         //CreateBubble("Message received : " + Random.Range(0, 100), false);
 
         Message prompt = new Message(Role.User, inputField.text);
@@ -142,7 +141,7 @@ public class DiscussionManager : SingleTon<DiscussionManager>,
             OnChatGPTMessageReceived.Trigger(result.FirstChoice.ToString());
 
             await GUIManager.Instance.HideSpinner();
-            CreateBubble(result.FirstChoice.ToString(), false);
+            await CreateBubble(result.FirstChoice.ToString(), false,true);
         }
         catch (Exception e)
         {
@@ -150,11 +149,11 @@ public class DiscussionManager : SingleTon<DiscussionManager>,
         }
     }
 
-    private async void CreateBubble(string message, bool isUserMessage)
+    private async UniTask CreateBubble(string message, bool isUserMessage,bool animation)
     {
         CreatingBubble = true;
         DiscussionBubble discussionBubble = Instantiate(bubblePrefab, bubblesParent);
-        await discussionBubble.Configure(message, isUserMessage);
+        await discussionBubble.Configure(message, isUserMessage,animation);
         await contentAutoScroll.UpdateContentSizeAndScroll();
         CreatingBubble = false;
     }
